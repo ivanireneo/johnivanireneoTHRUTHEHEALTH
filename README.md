@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,25 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+       
         :root {
             --primary: #2563eb;
             --primary-dark: #1d4ed8;
             --secondary: #0f172a;
-            --accent: #f43f5e;}
+            --accent: #f43f5e;
+        }
+       
         body {
             font-family: 'Inter', sans-serif;
-            overflow-x: hidden; }
+            overflow-x: hidden;
+        }
+       
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(244, 63, 94, 0.05) 100%);}
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(244, 63, 94, 0.05) 100%);
+        }
+       
         .appointment-card {
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-        }  
+        }
+       
         .appointment-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);}
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+
         .nav-link {
-            position: relative;}
+            position: relative;
+        }
+       
         .nav-link::after {
             content: '';
             position: absolute;
@@ -35,13 +48,21 @@
             bottom: -2px;
             left: 0;
             background-color: var(--primary);
-            transition: width 0.3s ease;}
-       .nav-link:hover::after {
-            width: 100%;}
+            transition: width 0.3s ease;
+        }
+       
+        .nav-link:hover::after {
+            width: 100%;
+        }
+       
         input:focus, textarea:focus {
             outline: 2px solid var(--primary);
-            outline-offset: 2px; }
-        .testimonial-card {  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+            outline-offset: 2px;
+        }
+       
+        .testimonial-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -53,12 +74,14 @@
                 </div>
                 <span class="text-2xl font-bold text-gray-800">ThruThe<span class="text-blue-600">Health</span></span>
             </div>
+           
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Home</a>
                 <a href="#services" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Services</a>
                 <a href="#about" class="nav-link text-gray-600 hover:text-blue-600 font-medium">About</a>
                 <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600 font-medium">Contact</a>
             </nav>
+           
             <div class="flex items-center space-x-4">
                 <a href="#appointment" class="hidden sm:inline-block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition duration-300">Book Appointment</a>
                 <button class="md:hidden text-gray-600 focus:outline-none">
@@ -67,6 +90,8 @@
             </div>
         </div>
     </header>
+
+
     <section class="hero-gradient py根-16 md:py-24">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
@@ -90,6 +115,8 @@
                     At ThruTheHealth, our mission is to bridge the gap between patients and quality healthcare through fast, friendly, and reliable telehealth services. We are committed to delivering compassionate care with a click—making health consultations accessible anytime, anywhere, without the wait or the worry.
                 </p>
             </div>
+
+
             <div>
                 <h3 class="text-2xl font-semibold text-blue-600 mb-4"> Vision</h3>
                 <p class="text-gray-700 text-lg leading-relaxed">
@@ -111,6 +138,8 @@
             </div>
         </div>
     </section>
+
+
     <section class="bg-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
@@ -133,12 +162,15 @@
             </div>
         </div>
     </section>
+
+
     <section id="services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Our <span class="text-blue-600">Telehealth</span> Services</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive virtual care for all your healthcare needs</p>
             </div>
+           
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl p-8 appointment-card">
                     <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -151,6 +183,7 @@
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+               
                 <div class="bg-white rounded-xl p-8 appointment-card">
                     <div class="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-prescription-bottle-alt text-pink-600 text-2xl"></i>
@@ -162,6 +195,7 @@
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+               
                 <div class="bg-white rounded-xl p-8 appointment-card">
                     <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-heart text-green-600 text-2xl"></i>
@@ -173,6 +207,7 @@
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+               
                 <div class="bg-white rounded-xl p-8 appointment-card">
                     <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-brain text-purple-600 text-2xl"></i>
@@ -184,6 +219,7 @@
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+               
                 <div class="bg-white rounded-xl p-8 appointment-card">
                     <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-baby text-yellow-600 text-2xl"></i>
@@ -195,6 +231,7 @@
                         <i class="fas fa-chevron-right ml-2 text-sm"></i>
                     </a>
                 </div>
+               
                 <div class="bg-white rounded-xl p-8 appointment-card">
                     <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
                         <i class="fas fa-file-medical text-indigo-600 text-2xl"></i>
@@ -209,12 +246,17 @@
             </div>
         </div>
     </section>
+
+
+
+
     <section id="how-it-works" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">How Our <span class="text-blue-600">Telehealth</span> Works</h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Simple steps to connect with healthcare professionals</p>
             </div>
+           
             <div class="flex flex-col md:flex-row justify-center items-center space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12">
                 <div class="flex flex-col items-center text-center max-w-xs">
                     <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
@@ -223,9 +265,11 @@
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">1. Create Your Account</h3>
                     <p class="text-gray-600">Sign up with your basic information and medical history for faster service.</p>
                 </div>
+               
                 <div class="hidden md:block">
                     <i class="fas fa-chevron-right text-gray-300 text-2xl"></i>
                 </div>
+               
                 <div class="flex flex-col items-center text-center max-w-xs">
                     <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-calendar-check text-blue-600 text-2xl"></i>
@@ -233,9 +277,11 @@
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">2. Book Appointment</h3>
                     <p class="text-gray-600">Select your preferred doctor and time slot that works for you.</p>
                 </div>
+               
                 <div class="hidden md:block">
                     <i class="fas fa-chevron-right text-gray-300 text-2xl"></i>
                 </div>
+               
                 <div class="flex flex-col items-center text-center max-w-xs">
                     <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-video text-blue-600 text-2xl"></i>
@@ -243,9 +289,11 @@
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">3. Video Consultation</h3>
                     <p class="text-gray-600">Connect via secure video at your appointment time from any device.</p>
                 </div>
+               
                 <div class="hidden md:block">
                     <i class="fas fa-chevron-right text-gray-300 text-2xl"></i>
-                </div>         
+                </div>
+               
                 <div class="flex flex-col items-center text-center max-w-xs">
                     <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-pills text-blue-600 text-2xl"></i>
@@ -603,5 +651,3 @@
     </footer>
 </body>
 </html>
-
-
