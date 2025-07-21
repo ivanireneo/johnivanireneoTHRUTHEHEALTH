@@ -8,22 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-       
         :root {
             --primary: #2563eb;
             --primary-dark: #1d4ed8;
             --secondary: #0f172a;
-            --accent: #f43f5e;
-        }
-       
+            --accent: #f43f5e;}
         body {
             font-family: 'Inter', sans-serif;
-            overflow-x: hidden;
-        }
-       
+            overflow-x: hidden; }
         .hero-gradient {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(244, 63, 94, 0.05) 100%);
-        }
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(244, 63, 94, 0.05) 100%);}
        
         .appointment-card {
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
@@ -246,10 +240,6 @@
             </div>
         </div>
     </section>
-
-
-
-
     <section id="how-it-works" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
